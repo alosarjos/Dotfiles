@@ -13,4 +13,3 @@ vim.opt.rtp:prepend(lazypath)
 
 require("nvim-config")
 require("lazy").setup("plugins")
-
