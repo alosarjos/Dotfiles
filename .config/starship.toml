@@ -8,6 +8,7 @@ $username\
 $directory\
 [](fg:peach bg:green)\
 $git_branch\
+$git_state\
 $git_status\
 [](fg:green bg:teal)\
 $c\
@@ -112,11 +113,15 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:teal"
+style = "bg:green"
 format = '[[ $symbol $branch ](fg:base bg:green)]($style)'
 
+[git_state]
+style = "bg:green"
+format = '[[ \($state( $progress_current of $progress_total)\) ](fg:base bg:green)]($style)'
+
 [git_status]
-style = "bg:teal"
+style = "bg:green"
 format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
 ahead = ' ⇡${count}'
 diverged = '⇕ ⇡${ahead_count} ⇣${behind_count}'
