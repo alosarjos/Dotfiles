@@ -1,0 +1,14 @@
+import = [
+  "~/.config/alacritty/tokyonight_moon.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12.5
+
+[keyboard]
+bindings = [
+  { key = "Q", mods = "Control", action = "Quit" },
+]

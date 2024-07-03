@@ -1,0 +1,14 @@
+[user]
+	name = José Miguel Sarasola
+	email = alosarjos@gmail.com
+	signingkey = E1C73A44383F3160
+[pull]
+	rebase = true
+[core]
+	editor = nvim
+[rerere]
+	enabled = true
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = master
