@@ -15,6 +15,7 @@ eval "$($HOME/.local/bin/oh-my-posh init zsh --config $HOME/.config/ohmyposh/con
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light atuinsh/atuin
 
 # Snippets configuration
 zstyle ':omz:plugins:eza' 'dirs-first' yes
@@ -26,25 +27,11 @@ zinit snippet OMZP::sudo
 zinit snippet OMZP::eza
 zinit snippet OMZP::taskwarrior
 zinit snippet OMZP::command-not-found
-zinit snippet OMZP::fzf
 ZOXIDE_CMD_OVERRIDE=cd zinit snippet OMZP::zoxide
 
 # Load completions
 autoload -U compinit && compinit
 zinit cdreplay -q
-
-# History
-HISTSIZE=5000
-HISTFILE=~/.zsh_history
-SAVEHIST=$HISTSIZE
-HISTDUP=erase
-setopt appendhistory
-setopt sharehistory
-setopt hist_ignore_space
-setopt hist_ignore_all_dups
-setopt hist_save_no_dups
-setopt hist_ignore_dups
-setopt hist_find_no_dups
 
 # Colors
 export LS_COLORS='di=1;34:ln=35:so=32:pi=33:ex=31:bd=1;36:cd=1;33:su=30;41:sg=30;46:tw=30;42:ow=30;43'
@@ -53,11 +40,6 @@ export LS_COLORS='di=1;34:ln=35:so=32:pi=33:ex=31:bd=1;36:cd=1;33:su=30;41:sg=30
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu select
-
-# Keybindings with emacs mode
-bindkey -e
-bindkey '^p' history-search-backward
-bindkey '^n' history-search-forward
 
 # Alias
 
