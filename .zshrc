@@ -43,6 +43,9 @@ zstyle ':completion:*' menu select
 
 # Alias
 
+## Tmux
+alias tm='tmux new-session -A -s ${USER} >/dev/null 2>&1'
+
 ## Protection
 alias chmod='chmod --preserve-root -v'
 alias chown='chown --preserve-root -v'
@@ -51,7 +54,3 @@ alias chown='chown --preserve-root -v'
 alias df='df -h'
 alias du='du -h'
 
-# Autostart Tmux if using a graphical session
-if [ -x "$(command -v tmux)" ] && [ -n "$DISPLAY}" ] && [ -z "${TMUX}" ]; then
-    exec tmux new-session -A -s ${USER} >/dev/null 2>&1
-fi
