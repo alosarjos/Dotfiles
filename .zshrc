@@ -46,6 +46,9 @@ zstyle ':completion:*' menu select
 ## Tmux
 alias tm='tmux new-session -A -s ${USER} >/dev/null 2>&1'
 
+# LazyGit
+alias lg='lazygit'
+
 ## Protection
 alias chmod='chmod --preserve-root -v'
 alias chown='chown --preserve-root -v'
