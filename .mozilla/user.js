@@ -242,6 +242,9 @@ user_pref("browser.download.useDownloadDir", true);
 // Enable rounded bottom window corners
 user_pref("widget.gtk.rounded-bottom-corners.enabled", true);
 
+// Move cache to RAM
+user_pref("browser.cache.disk.parent_directory", "/run/user/1000/firefox");
+
 /****************************************************************************
  * END: BETTERFOX                                                           *
 ****************************************************************************/
