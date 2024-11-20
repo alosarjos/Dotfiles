@@ -1,0 +1,10 @@
+{
+  "extras": [
+    "lazyvim.plugins.extras.lang.yaml",
+    "lazyvim.plugins.extras.lang.zig"
+  ],
+  "news": {
+    "NEWS.md": "7429"
+  },
+  "version": 7
+}
