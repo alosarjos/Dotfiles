@@ -1,0 +1,22 @@
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 13
+
+[window]
+dimensions = { columns = 200, lines = 50 }
+decorations_theme_variant = "Dark"
+dynamic_title = false
+opacity = 0.9
+
+[keyboard]
+bindings = [
+  { key = "Q", mods = "Control", action = "Quit" },
+  { key = "F11", action = "ToggleFullscreen" }
+]
+
+[general]
+import = [
+  "~/.config/alacritty/tokyonight_moon.toml"
+]
